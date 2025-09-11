@@ -1,14 +1,14 @@
 /* Estilo global del body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 
 /* Estilos para el header */
 header {
-    background-color: #0d6efd;
+    background-color: #343a40;
     color: white;
     padding: 15px;
     text-align: center;
@@ -63,7 +63,7 @@ footer {
 }
 
 .team-card {
-    background-color: white;
+    background-color: #343a40;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -79,6 +79,8 @@ footer {
 .imagen-1 {
     text-align: center;
     margin: 20px 0;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 .imagen-1 img {
@@ -90,6 +92,8 @@ footer {
 .img-u-chile {
     text-align: center;
     margin: 50px 0;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 .img-u-chile img {
@@ -102,9 +106,25 @@ footer {
 p {
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: black;
     margin-top: 10px;
 }
+
+h1 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 1.5;
+    color: white;
+    margin-top: 10px;
+}
+
+
  .creditos{
     color: white;
  }

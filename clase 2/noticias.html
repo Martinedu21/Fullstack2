@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fútbol - Página Principal</title>
-    <link rel="stylesheet" href="fullstack.css">
+    <title>Fútbol Mundo - Noticias</title>
+    <link rel="stylesheet" href="noticias.css">
 </head>
 <body>
-    <header>
-    <h1>Bienvenidos al Mundo del Fútbol</h1>
-    <p>Últimas noticias y equipos de fútbol</p>
-</header>
+<header class="site-header">
+    <div class="container">
+      <h1>Mundo del Fútbol Noticias</h1>
+      <p class="tagline">Noticias, resultados y análisis del fútbol alrededor del planeta</p>
+    </div>
+  </header>
 
 <nav>
     <a href="fullStack2.html">Inicio</a>
@@ -18,7 +20,76 @@
     <a href="equipos.html">Equipos</a>
     <a href="calendario.html">Calendario</a>
 </nav>
+<main class="container">
+    <section class="hero">
+      <img src="imagenes not/R.jpg" alt="Estadio lleno" />
+      <div class="hero-text">
+        <h2>El estadio mas lindo de toda sudamerica</h2>
+        <p>El Estadio Monumental es el reducto más moderno, exitoso y seguro de sudamerica. Digno del equipo más grande. Y, por supuesto, seguirá mejorando con el correr de los años</p>
+      </div>
+    </section>
 
+    <section class="news-grid">
+      <!-- Article 1 -->
+      <article class="card">
+        <img src="imagenes not/Real-Madrid-vs-Mallorca-goles-de-Guler-y-Vinicius-Jr.webp" alt="Jugador celebrando" />
+        <div class="card-body">
+          <h3 class="title">Entrenador nuevo al mando</h3>
+          <p class="excerpt">Real Madrid venció 2-1 a Mallorca en el Estadio Santiago Bernabéu, por la tercera fecha de la LaLiga 2025/2026. Arda Güler y Vinícius Jr., fueron los autores de los goles del equipo de Xabi Alonso.</p>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="card">
+        <img src="imagenes not/FIFA-Logo-Getty-02-6f0693.webp" alt="Afición en las gradas" />
+        <div class="card-body">
+          <h3 class="title">¡Histórico: la FIFA permitirá partidos europeos en EE UU!</h3>
+          <p class="excerpt">El organismo internacional llegó a un acuerdo por el que permitirá la celebración de partidos de competiciones domésticas en suelo extranjero.</p>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="card">
+        <img src="imagenes not/lowres_3_.avif" alt="Partido de Champions" />
+        <div class="card-body">
+          <h3 class="title">Champions League: formato y fechas clave</h3>
+          <p class="excerpt">En 2025/26, la máxima competición europea de clubes regresa para su 71ª temporada y la 34ª desde que pasó a llamarse UEFA Champions League. Arrancó el 8 de julio de 2025 y se prolongará hasta la final de Budapest, Hungría, el sábado 30 de mayo de 2026.</p>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="card">
+        <img src="imagenes not/CPHIDJ7Z7NDAXLW75BBKSGISCM.jpg" alt="Operaciones de mercado" />
+        <div class="card-body">
+          <h3 class="title">Mercado de pases: fichajes confirmados</h3>
+          <p class="excerpt">Oficial: El Arsenal ficha a Viktor Gyökeres por 63 millones más 10 en variables</p>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="card">
+        <img src="imagenes not/barca.avif" alt="Fútbol femenino" />
+        <div class="card-body">
+          <h3 class="title">El Barça es una apisonadora</h3>
+          <p class="excerpt">Goleada en San Mamés en otro partido en el que las azulgranas no dieron opciones a un Athletic sobrepasado. Golazos de Patri Guijarro y Zubieta.</p>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="card">
+        <img src="imagenes not/u-de-chile-vs-colo-colo-superclasico-750x400.jpg" alt="Entrada a estadio" />
+        <div class="card-body">
+          <h3 class="title">Dónde y a qué hora ver el Superclásico entre Colo Colo vs. U. de Chile por la Supercopa</h3>
+          <p class="excerpt">La final por el trofeo entre el campeón de la Liga de Primera y la Copa Chile se define este domingo 14 de septiembre.</p>
+        </div>
+      </article>
+  </main>
+
+
+<script>
+  // año actual
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 <footer>
     <p class="creditos">&copy; 2025 Fútbol - Todos los derechos reservados</p>
 </footer>
