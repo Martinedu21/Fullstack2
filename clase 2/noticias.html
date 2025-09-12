@@ -9,7 +9,7 @@
 <body>
 <header class="site-header">
     <div class="container">
-      <h1>Mundo del Fútbol Noticias</h1>
+      <h1>Mundo del Fútbol - Noticias</h1>
       <p class="tagline">Noticias, resultados y análisis del fútbol alrededor del planeta</p>
     </div>
   </header>
@@ -18,7 +18,7 @@
     <a href="index.html">Inicio</a>
     <a href="#">Noticias</a>
     <a href="equipos.html">Equipos</a>
-    <a href="calendario.html">Calendario</a>
+    <a href="FechasHistoricas.html">Fechas historicas</a>
 </nav>
 <main class="container">
     <section class="hero">
@@ -87,11 +87,30 @@
 
 
 <script>
-  // año actual
+
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 <footer>
     <p class="creditos">&copy; 2025 Fútbol - Todos los derechos reservados</p>
 </footer>
+
+ <script>
+      console.log("Bienvenido a las Noticias ⚽");
+
+      window.onload = function() {
+          alert("¡Bienvenido a la ventana de noticias del Fútbol!");
+      };
+
+      const links = document.querySelectorAll("nav a");
+      links.forEach(link => {
+          link.addEventListener("mouseover", () => {
+              link.style.color = "red";
+          });
+          link.addEventListener("mouseout", () => {
+              link.style.color = "";
+          });
+      });
+  </script>
+
 </body>
 </html>

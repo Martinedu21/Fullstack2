@@ -9,7 +9,7 @@
 <body>
 <header class="site-header">
     <div class="container">
-      <h1>Mundo del Fútbol Equipos</h1>
+      <h1>Mundo del Fútbol - Equipos</h1>
       <p class="tagline">Tablas de posiciones 5 grandes ligas </p>
     </div>
   </header>
@@ -18,7 +18,7 @@
     <a href="index.html">Inicio</a>
     <a href="noticias.html">Noticias</a>
     <a href="#">Equipos</a>
-    <a href="calendario.html">Calendario</a>
+    <a href="FechasHistoricas.html">Fechas historicas</a>
 </nav>
 <main class="container">
     <section class="hero">
@@ -170,11 +170,24 @@
   </main>
 
   
+ <script>
+      console.log("Bienvenido a los mejores equipos del mundo ⚽");
 
-<script>
-  // año actual
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+      window.onload = function() {
+          alert("¡Bienvenido a la ventana de los mejores equipos del Fútbol!");
+      };
+
+      const links = document.querySelectorAll("nav a");
+      links.forEach(link => {
+          link.addEventListener("mouseover", () => {
+              link.style.color = "red";
+          });
+          link.addEventListener("mouseout", () => {
+              link.style.color = "";
+          });
+      });
+  </script>
+
 <footer>
     <p class="creditos">&copy; 2025 Fútbol - Todos los derechos reservados</p>
 </footer>
