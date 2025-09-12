@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo del Fútbol - Calendario</title>
   <link rel="stylesheet" href="Fechas.css">
+  <script src="Fechas.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -89,25 +90,6 @@
         </div>
       </article>
   </main>
-
- <script>
-      console.log("Bienvenido a los momentos historicos del futbol ⚽");
-
-      window.onload = function() {
-          alert("¡Bienvenido a la ventana de los momentos mas historicos del Fútbol!");
-      };
-
-      const links = document.querySelectorAll("nav a");
-      links.forEach(link => {
-          link.addEventListener("mouseover", () => {
-              link.style.color = "red";
-          });
-          link.addEventListener("mouseout", () => {
-              link.style.color = "";
-          });
-      });
-  </script>
-
 
   <footer>
     <p class="creditos">&copy; 2025 Fútbol - Todos los derechos reservados</p>

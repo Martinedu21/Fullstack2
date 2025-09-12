@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fútbol Mundo - Noticias</title>
     <link rel="stylesheet" href="equipos.css">
+    <script src="equipos.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -170,23 +171,7 @@
   </main>
 
   
- <script>
-      console.log("Bienvenido a los mejores equipos del mundo ⚽");
 
-      window.onload = function() {
-          alert("¡Bienvenido a la ventana de los mejores equipos del Fútbol!");
-      };
-
-      const links = document.querySelectorAll("nav a");
-      links.forEach(link => {
-          link.addEventListener("mouseover", () => {
-              link.style.color = "red";
-          });
-          link.addEventListener("mouseout", () => {
-              link.style.color = "";
-          });
-      });
-  </script>
 
 <footer>
     <p class="creditos">&copy; 2025 Fútbol - Todos los derechos reservados</p>
